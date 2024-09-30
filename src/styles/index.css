@@ -1,12 +1,63 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+/* Estilo global del fondo del sitio */
+body {
+    background-color: slateblue;
+    margin: 0; /* Elimina el margen predeterminado del body para centrar la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Mantiene el contenido centrado verticalmente */
+  }
+  
+  /* Estilo para la parte superior del semáforo */
+  .top {
+    width: 20px;
+    height: 100px;
+    background-color: black;
+    margin: auto;
+  }
+  
+  /* Contenedor del semáforo */
+  .container {
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las luces */
+  }
+  
+  /* Estilo común para todas las luces */
+  .light {
+    border-radius: 50%; /* Redondez perfecta */
+    height: 60px;
+    width: 60px;
+    transition: all 0.3s ease-in-out; /* Transición suave para cambios de estado */
+  }
+  
+  /* Colores de las luces */
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  /* Estilo para la luz seleccionada */
+  .selected {
+    box-shadow: 0 0 20px 10px rgba(255, 218, 150, 0.8); /* Sombra más suave y ajustada */
+  }
+  
+  /* Estilo para la luz no seleccionada (más opaca) */
+  .opacity {
+    opacity: 0.3;
+  }
+  
